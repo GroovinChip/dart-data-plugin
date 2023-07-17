@@ -44,7 +44,7 @@ class FullDataAction : BaseAnAction() {
             MyHashCodeAction.Companion,
             MyToStringAction.Companion,
             DartCopyWithAction.Companion,
-            MapAction.Companion
+            JsonAction.Companion
         )
             .map { it.processAction(generationData) }
 

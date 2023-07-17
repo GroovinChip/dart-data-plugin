@@ -12,13 +12,13 @@ import andrasferenczi.declaration.variableName
 import andrasferenczi.ext.psi.extractClassName
 import andrasferenczi.templater.AliasedVariableTemplateParam
 import andrasferenczi.templater.AliasedVariableTemplateParamImpl
-import andrasferenczi.templater.MapTemplateParams
-import andrasferenczi.templater.createMapTemplate
+import andrasferenczi.templater.JsonTemplateParams
+import andrasferenczi.templater.createJsonTemplate
 import com.intellij.codeInsight.template.TemplateManager
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.jetbrains.lang.dart.psi.DartClassDefinition
 
-class MapAction : BaseAnAction() {
+class JsonAction : BaseAnAction() {
 
     override fun processAction(
         event: AnActionEvent,
@@ -54,9 +54,9 @@ class MapAction : BaseAnAction() {
             val configuration = ConfigurationDataManager.retrieveData(project)
             val dartClassName = dartClass.extractClassName()
 
-            val template = createMapTemplate(
+            val template = createJsonTemplate(
                 templateManager,
-                MapTemplateParams(
+                JsonTemplateParams(
                     className = dartClassName,
                     variables = variableNames,
                     useNewKeyword = configuration.useNewKeyword,

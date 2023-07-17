@@ -29,7 +29,7 @@ class DataClassConfigurable(
         lastSavedConfigurationData = dataToSave.copy()
     }
 
-    override fun createComponent(): JComponent? {
+    override fun createComponent(): JComponent {
         // This data will be replaced in the reset() call with the right values
         val ui = createConfigurationUI(ConfigurationData.TEST_DATA)
         this.uiElements = ui

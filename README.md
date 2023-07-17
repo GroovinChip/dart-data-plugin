@@ -1,3 +1,10 @@
+This plugin is a fork, intended to make the following changes:
+- [ ] Sort constructors first
+- [ ] Correctly name `fromJson()` and `toJson()`
+- [ ] Remove unnecessary `this.` from generated `toJson()` functions
+
+---
+
 # Dart Data Class Plugin
 
 ![Usage](img/dart-data-usage.gif)

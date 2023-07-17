@@ -16,7 +16,7 @@ data class ConfigurationData constructor(
 ) {
     companion object {
         val DEFAULT_DATA = ConfigurationData(
-            copyWithMethodName = TemplateConstants.COPYWITH_DEFAULT_METHOD_NAME,
+            copyWithMethodName = TemplateConstants.COPY_WITH_DEFAULT_METHOD_NAME,
             useRequiredAnnotation = true,
             useNewKeyword = false,
             useConstForConstructor = true,

@@ -24,7 +24,7 @@ class GenerateDialog(
     private val fieldList: JBList<PsiElement>
 
     init {
-        title = "Select Fields - Dart Dataclass Generation"
+        title = "Select Fields - Dart Data Class Generation"
 
         fieldsCollection = CollectionListModel(
             declarations.map { it.name }

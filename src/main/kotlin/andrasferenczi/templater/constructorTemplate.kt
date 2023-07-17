@@ -104,7 +104,7 @@ fun createConstructorTemplate(
 
         addSemicolon()
 
-        // Line break helps formatting
+        // Line break helps with formatting
         addSpace()
     }
 }

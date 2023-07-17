@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>andrasferenczi.dart-data-plugin</id>
     <name>Dart Data Class</name>
-    <vendor email="a.ferenczi.andras@gmail.com">Andras Ferenczi</vendor>
+    <vendor email="groovinchip@gmail.com">GroovinChip</vendor>
 
     <depends>Dart</depends>
     <!--    To prevent it from being legacy-->
@@ -11,19 +11,18 @@
     <idea-version since-build="183"/>
 
     <description><![CDATA[
-        <p>Essential utility methods generator for Dart data classes.</p>
+        <p>Essential utility methods generator for Dart Data Classes.</p>
         <br/>
         <br/>
         <p>Features:</p>
         <ul>
             <li>Named argument constructor generator</li>
             <li>copyWith() method generator</li>
-            <li>toJson() / fromJson() methods generator</li>
+            <li>fromJson() / toJson() methods generator</li>
+            <li>equality, hashCode, and toString() generator</li>
         </ul>
-
-        <p>Featured with a couple additional settings.</p>
         <br/>
-        <p>Find out more on the project's <a href="https://github.com/andrasferenczi/dart-data-plugin">Github page</a>.</p>
+        <p>Find out more on the project's <a href="https://github.com/groovinchip/dart-data-plugin">Github page</a>.</p>
         <br/>
         <em>Not an official plugin.<em/>
     ]]></description>
@@ -97,8 +96,8 @@
                           anchor="after"
                           relative-to-action="andrasferenczi.action.NamedArgumentConstructorAction"/>
         </action>
-        <action id="andrasferenczi.action.MapAction"
-                class="andrasferenczi.action.MapAction"
+        <action id="andrasferenczi.action.JsonAction"
+                class="andrasferenczi.action.JsonAction"
                 text="toMap() and fromMap()">
             <add-to-group group-id="GenerateGroup"
                           anchor="after"

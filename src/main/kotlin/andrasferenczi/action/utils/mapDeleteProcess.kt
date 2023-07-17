@@ -8,8 +8,8 @@ fun createMapDeleteCall(
     dartClass: DartClass
 ): (() -> Unit)? {
 
-    val toMapMethod = dartClass.findMethodByName(TemplateConstants.TO_MAP_METHOD_NAME)
-    val fromMapMethod = dartClass.findNamedConstructor(TemplateConstants.FROM_MAP_METHOD_NAME)
+    val toMapMethod = dartClass.findMethodByName(TemplateConstants.TO_JSON_METHOD_NAME)
+    val fromMapMethod = dartClass.findNamedConstructor(TemplateConstants.FROM_JSON_METHOD_NAME)
 
     return listOfNotNull(
         toMapMethod,
